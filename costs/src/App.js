@@ -1,4 +1,7 @@
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+
+import Container from './components/layout/Container'
+
 import Home from './components/pages/Home'
 import Contato from './components/pages/Contato'
 import Compania from './components/pages/Compania'
@@ -19,12 +22,14 @@ function App() {
         </li>
       </ul>
 
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route path='/compania' element={<Compania />} />
-        <Route path='/contato' element={<Contato />} />
-        <Route path='/novoprojeto' element={<NovoProjeto />} />
-      </Routes>
+      <Container customClass='min-height'>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route path='/compania' element={<Compania />} />
+          <Route path='/contato' element={<Contato />} />
+          <Route path='/novoprojeto' element={<NovoProjeto />} />
+        </Routes>
+      </Container>
 
       <p>
         Footer
