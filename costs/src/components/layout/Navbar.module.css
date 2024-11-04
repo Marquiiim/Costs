@@ -12,14 +12,34 @@
 }
 
 .item {
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
     margin-right: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.4s ease, background-color 0.4s ease;
+
+    &:hover {
+        transform: scale(1.1);
+        background-color: rgba(46, 46, 46, 0.158);
+        backdrop-filter: blur(10px);
+        cursor: pointer;
+        
+        & a {
+            color: #FFBB33;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+        background-color: rgba(46, 46, 46, 0.16);
+        backdrop-filter: blur(10px);
+    }
 
     & a {
         color: white;
         text-decoration: none;
-
-        &:hover {
-            color: #FFBB33;
-        }
     }
 }
