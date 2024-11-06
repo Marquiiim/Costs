@@ -22,8 +22,7 @@ function NovoProjeto() {
             body: JSON.stringify(project)
         })
             .then(resp => resp.json())
-            .then((data) => {
-                console.log(data)
+            .then((e) => {
                 navigate('/projetos')
             })
             .catch(err => console.log(err))

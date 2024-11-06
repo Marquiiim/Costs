@@ -56,7 +56,7 @@ function ProjetoForm({ handleSubmit, btnText, projectData }) {
                 name='budget'
                 placeholder='Insira o orçamento total'
                 handleOnChange={handleChange}
-                value={project.budget  ? project.name: ''} />
+                value={project.budget  ? project.budget: ''} />
             <div>
                 <Select name='category_id'
                     text='Selecione a categoria'
