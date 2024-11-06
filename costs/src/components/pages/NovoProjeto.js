@@ -23,7 +23,7 @@ function NovoProjeto() {
         })
             .then(resp => resp.json())
             .then((e) => {
-                navigate('/projetos')
+                navigate('/projetos', { state: { message: 'Projeto criado com sucesso' } })
             })
             .catch(err => console.log(err))
     }
