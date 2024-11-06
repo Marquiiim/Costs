@@ -1,0 +1,33 @@
+{
+  "projects": [
+    {
+      "id": "e3f8",
+      "category": {
+        "id": "2",
+        "name": "Desenvolvimento"
+      },
+      "name": "Desenvolvimento FrontEnd",
+      "budget": "",
+      "cost": 0,
+      "services": []
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Infra"
+    },
+    {
+      "id": 2,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 3,
+      "name": "Design"
+    },
+    {
+      "id": 4,
+      "name": "Planejamento"
+    }
+  ]
+}
