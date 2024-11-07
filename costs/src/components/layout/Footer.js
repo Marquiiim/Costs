@@ -1,5 +1,3 @@
-import { Link } from 'react-router-dom'
-
 import { FaWhatsapp, FaInstagram, FaLinkedin } from 'react-icons/fa'
 
 import styles from './Footer.module.css'
