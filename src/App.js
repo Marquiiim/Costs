@@ -9,6 +9,7 @@ import Contato from './components/pages/Contato'
 import Compania from './components/pages/Compania'
 import NovoProjeto from './components/pages/NovoProjeto'
 import Projetos from './components/pages/Projetos'
+import Projeto from './components/pages/Projeto'
 
 function App() {
   return (
@@ -17,11 +18,12 @@ function App() {
 
       <Container customClass='min-height'>
         <Routes>
-          <Route exact path='/' element={<Home />} />
+          <Route path='/' element={<Home />} />
           <Route path='/projetos' element={<Projetos />} />
           <Route path='/compania' element={<Compania />} />
           <Route path='/contato' element={<Contato />} />
           <Route path='/novoprojeto' element={<NovoProjeto />} />
+          <Route path='/project/:id' element={<Projeto />} />
         </Routes>
       </Container>
 
