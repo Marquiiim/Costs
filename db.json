@@ -12,17 +12,6 @@
       "services": []
     },
     {
-      "id": "dfe8",
-      "name": "Desenvolvimento BackEnd",
-      "budget": "50000",
-      "category": {
-        "id": "2",
-        "name": "Desenvolvimento"
-      },
-      "cost": 0,
-      "services": []
-    },
-    {
       "id": "4a24",
       "name": "Desenvolvimento BackEnd API",
       "budget": "100000",
@@ -36,19 +25,19 @@
   ],
   "categories": [
     {
-      "id": 1,
+      "id": "1",
       "name": "Infra"
     },
     {
-      "id": 2,
+      "id": "2",
       "name": "Desenvolvimento"
     },
     {
-      "id": 3,
+      "id": "3",
       "name": "Design"
     },
     {
-      "id": 4,
+      "id": "4",
       "name": "Planejamento"
     }
   ]
