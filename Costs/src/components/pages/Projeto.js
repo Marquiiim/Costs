@@ -2,6 +2,7 @@ import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjetoForm'
 import Mensagem from '../layout/Mensagem'
+import ServiceForm from '../service/ServiceForm'
 
 import styles from './Projeto.module.css'
 
