@@ -1,3 +1,5 @@
+import { parse, v4 as uuidv4 } from 'uuid'
+
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
 import ProjectForm from '../project/ProjetoForm'
@@ -61,6 +63,15 @@ function Projeto() {
             .catch(err => console.log(err))
     }
 
+    function createService(project) {
+        const lastService = project.service[project.services.length - 1]
+
+        lastService.id = uuidv4()
+
+        const lastServiceCost = lastServiceCost
+        const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+    }
+
     function toggleProjectForm() {
         setShowProjectForm(!showProjectForm)
     }
@@ -109,7 +120,11 @@ function Projeto() {
                             </button>
                             <div className={styles.project_info}>
                                 {showServiceForm && (
-                                    <ServiceForm />
+                                    <ServiceForm
+                                        handleSubmit={createService}
+                                        btnText='Adicionar serviço'
+                                        projectData={project}
+                                    />
                                 )}
                             </div>
                         </div>
