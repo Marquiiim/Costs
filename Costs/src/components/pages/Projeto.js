@@ -1,5 +1,6 @@
 import Loading from '../layout/Loading'
 import Container from '../layout/Container'
+import ProjectForm from '../project/ProjetoForm'
 
 import styles from './Projeto.module.css'
 
@@ -58,9 +59,9 @@ function Projeto() {
                                 </div>
                             ) : (
                                 <div className={styles.project_info}>
-                                    <p>
-                                        Detalhes do projeto
-                                    </p>
+                                    <ProjectForm handleSubmit={editPost}
+                                        btnText='Concluir edição'
+                                        projectData={project} />
                                 </div>
                             )}
                         </div>
