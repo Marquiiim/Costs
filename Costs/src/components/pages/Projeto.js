@@ -53,7 +53,7 @@ function Projeto() {
             },
             body: JSON.stringify(project),
         })
-            .then(resp => resp.json())
+            .then((resp) => resp.json())
             .then((data) => {
                 setProject(data)
                 setShowProjectForm(false)
@@ -64,12 +64,34 @@ function Projeto() {
     }
 
     function createService(project) {
-        const lastService = project.service[project.services.length - 1]
+        const lastService = project.services[project.services.length - 1]
 
         lastService.id = uuidv4()
 
-        const lastServiceCost = lastServiceCost
+        const lastServiceCost = lastService.cost
         const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost)
+
+        if (newCost > parseFloat(project.budget)) {
+            setMessage('Orçamento ultrapassado, verifique o valor do serviço')
+            setType('error')
+            project.services.pop()
+            return false
+        }
+
+        project.cost = newCost
+
+        fetch(`http://localhost:5000/projects/${project.id}`, {
+            method: 'PATCH',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(project)
+        })
+            .then((resp) => resp.json())
+            .then((data) => {
+
+            })
+            .catch(err => console.log(err))
     }
 
     function toggleProjectForm() {
