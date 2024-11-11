@@ -6,7 +6,7 @@ import styles from './ServiceForm.module.css'
 
 function ServiceForm({ handleSubmit, btnText, projectData }) {
 
-    const [service, setService] = useState[{}]
+    const [service, setService] = useState({})
 
 
     function submit(e) {
