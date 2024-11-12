@@ -1,4 +1,5 @@
 # Costs
+## (REPOSITÓRIO COM ERRO NO .GITIGNORE) !!!RECRIADO!!!
 
 **Costs** é uma plataforma web inovadora voltada para o planejamento e gestão de projetos com foco no controle de custos. Com **Costs**, é possível criar projetos, atribuir valores a cada etapa da sua execução e até mesmo contratar profissionais especializados para colaborar nas diversas fases do trabalho.
 
